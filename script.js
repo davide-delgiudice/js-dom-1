@@ -6,5 +6,13 @@ const button = document.getElementById('turn');
 // creo una funzione per il bottone
 button.addEventListener('click', function() {
     console.log('Acceso!');
-
+    
+    if(lampon.classList.contains('hidden')){
+        lampon.classList.remove('hidden');
+        lampoff.classList.add('hidden');
+    }
+    else{
+        lampoff.classList.remove('hidden');
+        lampon.classList.add('hidden');
+    }
 })
